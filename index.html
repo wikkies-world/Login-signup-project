@@ -10,6 +10,20 @@
 <body>
     <div class="bg">
         <div class="card-container">
+            <div id="forgotPasswordContainer" class="card1">
+                <h1 class="main-heading">Forgot Password?</h1>
+                <div class="inputs-container">
+                    <p class="input-head">Username <span style="color: red">*</span></p>
+                    <input id="forgotPasswordUsername" class="input" type="text" placeholder="your cutename🥰">
+                    <p class="input-head">What is your first school name?<span style="color: red">*</span></p>
+                    <input id="forgotPasswordVerifier" class="input" type="text" placeholder="school name🏫">
+                </div>
+                <div class="btn-container">
+                    <button id="forgotPasswordBtn">Reset Password</button>
+                </div>
+                <p class="signup-link">Remembered your password? <span id="loginBtn3" onclick="loadLoginPage()" class="sign-up">Login</span></p>
+            </div>
+
             <div id="loginPageContainer" class="card1">
                 <h1 class="main-heading">love login💖</h1>
                 <div class="inputs-container">
@@ -18,31 +32,30 @@
                     <p class="input-head">Password <span style="color: red">*</span></p>
                     <input id="loginPassword" class="input" type="password" placeholder="your secret code🫣">
                 </div>
-                <div class="btn-container">
-                    <button>Login</button>
-                </div>
-                <p class="signup-link">Don't have an Account? <span id="signupBtn2" onclick="loadSignupPage()" class="sign-up">Sign Up</span></p>
+                    <div class="btn-container">
+                        <button id="loginBtn">Login</button>
+                    </div>
+                    <p class="forgot-password-link"><span id="forgotPasswordBtnLink" onclick="loadForgotPasswordPage()" class="sign-up">Forgot Password?</span></p>
+                    <p class="signup-link">Don't have an Account? <span id="signupBtn2" onclick="loadSignupPage()" class="sign-up">Sign Up</span></p>
                 </div>
             </div>
 
             <div id="signupPageContainer" class="card1">
-                <h1 class="main-heading">love login💖</h1>
+                <h1 class="main-heading">love Sign Up💖</h1>
                 <div class="inputs-container">
                     <p class="input-head">Username <span style="color: red">*</span></p>
                     <input id="signupUsername" class="input" type="text" placeholder="set your cutename🥰">
-                    <p class="input-head">New Password <span style="color: red">*</span></p>
-                    <input id="signupNewPassword" class="input" type="password" placeholder="set secret code❗️">
-                    <p class="input-head">Confirm Password<span style="color: red">*</span></p>
-                    <input id="signupConfirmPassword" class="input" type="password" placeholder="confirm secret code⚠️">
+                    <p class="input-head">Password <span style="color: red">*</span></p>
+                    <input id="signupPassword" class="input" type="password" placeholder="set secret code❗️">
                     <p class="input-head">What is your first school name?<span style="color: red">*</span></p>
                     <input id="signupUserVerifier" class="input" type="text" placeholder="school name🏫">
                 </div>
                 <div class="btn-container">
-                    <button>Sign Up</button>
+                    <button id="signupBtn" >Sign Up</button>
                 </div>
                 <p class="signup-link">Already have an Account? <span id="loginBtn2" onclick="loadLoginPage()" class="sign-up">Login</span></p>
                 </div>
-            </div>
+            </div>    
         </div>
         
     </div>
