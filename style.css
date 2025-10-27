@@ -94,6 +94,13 @@ button:hover {
     align-self: center;
 }
 
+.input:focus {
+    outline: none;
+    border-color: rgb(255, 0, 144);
+    box-shadow: 0 0 10px rgb(255, 0, 144, 0.5);
+    transition: 0.3s;
+}
+
 .inputs-container {
     display: flex;
     flex-direction: column;
